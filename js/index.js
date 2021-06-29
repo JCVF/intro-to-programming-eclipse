@@ -2,7 +2,7 @@ let today = new Date();
 let thisYear = today.getFullYear();
 let footer = document.querySelector('footer')
 const copyright = document.createElement('p');
-copyright.innerHTML = `Julio Vazquez ${thisYear}`;
+copyright.innerHTML = `Julio Vazquez ${thisYear} &copy`;
 footer.appendChild(copyright);
 
 
@@ -32,9 +32,9 @@ messageForm.addEventListener('submit', (e) => {
     let messageSection = document.getElementById('messages');
     let messageList = messageSection.querySelector('ul');
     let newMessage = document.createElement('li');
-    newMessage.innerHTML = `<a href="${email}">${name}</a> wrote:<span>${message}</span>`
+    newMessage.innerHTML = `<a href="${email}">${name}</a> wrote: <span>${message}</span>`
     const removeButton = document.createElement('button');
-    removeButton.textContent = "remove";
+    removeButton.textContent = "Remove";
     removeButton.type = 'button';
     removeButton.addEventListener('click', (Event) => {
         const entry = Event.target.parentNode;

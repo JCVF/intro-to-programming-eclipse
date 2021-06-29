@@ -3,39 +3,39 @@
     <head>
         <title>First Project</title>
         <meta name="author" content="Julio Vazquez">
+        <link rel="stylesheet" href="css/index.css">
     </head>
         
     <body>
 
-        <header>
+        <div>
+            <header id="header">
             First Project
-        </header>
-        <img src="img/self.jpeg"
-        style="width: 400px">
+            </header>
+            <img src="img/self.jpeg"
+             class="pic">
+        </div>
 
         <h1>Julio Vazquez</h1>
             <section>
                 <h2>About</h2>
-                    <p>I'm from Mexico but raised in North Carolina. I currently work as a 
-                    automation technician/electrician in a manufacturing plant where we make
-                    transmission for Toyota vehicles. No prior knowledge of any programming
-                    language other than Programmable Logistic Controller ladder logic or
-                    Boolean logic but always had a strong interest in coding.</p>
+                    <p>Student of Code the Dream and Automation Technician by trade. Originally from Mexico but raised in North Carolina.</p>
             </section>
 
              <section>
                 <h2>Experience</h2>
-                    <p>Currently a automation technician/electrician.
-                    Have some community college education in electronics. 
-                    Worked in the oil/gas industry in frac sites.
-                    Drove over the road as a commercial driver with a commercial driver's license. 
-                    Was a mechanic for the National Guard to work on helicopters.</p>
+                    <ul id="exp">
+                        <li>Automation Technician/Electrician; AWNC Durham, NC - 7/2016 to Present</li>
+                        <li>Frac Supervisor; Pilot Logistics Oklahoma City, OK - 7/2014 to 4/2016</li>
+                        <li>Over the Road Truck Driver; PAM Transport TontiTown, AR - 1/2013 to 7/2014</li> 
+                        <li>Aircraft Mechanic; NC National Guard Morrisville, NC - 4/2010 to 4/2018</li>
+                    </ul>
             </section>
 
             <section>
                 <h2>Connect</h2>
                     <ul>
-                        <li>julio.vazquezflores@live.com</li>
+                        <li><a href="mailto: julio.vazquezflores@live.com">julio.vazquezflores@live.com</a></li>
                         <li><a href="https://github.com/JCVF" target="_blank">https://github.com/JCVF</a></li>
                     </ul>
             </section>
@@ -46,19 +46,23 @@
             </section>
           
             <section>
-                <h2>Leave a Message</h2>
+                <h3>Leave a Message</h3>
                 <form id="leave_message">
                     <label>Name</label><br>
                     <input type="text" name="name" required="true"><br>
+                    
                     <label>Email Address</label><br>
                     <input type="email" name="email" required="true"><br>
+                    
                     <label>Message</label><br>
                     <textarea name="message" required="true"></textarea><br>
+                    
                     <button type="submit">Submit</button>
                 </form>
              </section>
+             
              <section id="messages">
-                 <h2>Messages</h2>
+                 <h3>Messages</h3>
                  <ul>
 
 
