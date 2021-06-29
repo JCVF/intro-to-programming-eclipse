@@ -1,0 +1,112 @@
+body {
+    background-color: rgb(243, 243, 243);
+}
+
+p {
+    color:rgb(11, 0, 49);
+    font-family: sans-serif;
+}
+
+section {
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.pic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    }
+h1 {
+    text-align: center;
+    font-size: 200%;
+    font-weight: bolder;
+    color:rgb(43, 0, 0)
+
+}
+s
+h2 {
+    text-align: center;
+    font-size: 150%;
+    font-weight: bold;
+    color:rgb(20, 0, 94)
+}
+
+#exp {
+    border-color:blue;  
+    border-width: 1px;  
+    border-style: groove;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    list-style: none;
+}
+
+#skills li {
+    border-color:rgb(0, 0, 0);  
+    border-width: 1px;  
+    border-style: groove;
+    margin: 1rem;
+    list-style: none;
+    padding: 1px;
+}
+
+label {
+    color: rgb(50, 0, 92);
+    margin: 1rem;
+    padding: 1px;
+}
+
+input {
+    margin: 1rem;
+    padding: none;
+    border-style: ridge;
+}
+
+textarea {
+    font-family: sans-serif;
+    margin: 1rem;
+    padding: none;
+    border-style: ridge;
+}
+
+#leave_message button {
+    border: flex;
+    border-radius: 4px;
+    background-color: rgb(208, 242, 255);
+}
+
+#leave_message button:hover {
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+#messages li {
+    border-color:rgb(255, 0, 0);  
+    border-width: 1px;  
+    border-style: groove;
+    margin: 1rem;
+    padding: 1px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+#messages button {
+    border: flex;
+    border-radius: 4px;
+    background-color: rgb(255, 146, 126);
+    margin: 3rem;
+}
+
+#messages button:hover {
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+footer {
+    word-spacing: 1px;
+    background-color: lightgrey;
+}
+
+/* still need media queries */
+   
