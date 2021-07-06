@@ -1,6 +1,44 @@
+
+*{
+    box-sizing: border-box;
+}
+
+.pro {
+    margin: 0;
+}
+
+.nav {
+    margin: 10px;
+}
+
 body {
     background-color: rgb(243, 243, 243);
 }
+
+ul {
+    list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.pro, 
+.nav a {
+	text-align: center;
+	display: block;
+	padding: 10px 15px;
+}
+
+.nav a {
+	font-size: 1rem;
+	color: rgb(0, 0, 0);
+	text-transform: uppercase;
+}
+.nav a:hover {
+	color:yellow ;
+}
+
 
 p {
     color:rgb(11, 0, 49);
@@ -16,23 +54,33 @@ section {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 20%;
     }
 h1 {
     text-align: center;
     font-size: 200%;
     font-weight: bolder;
     color:rgb(43, 0, 0)
-
 }
-s
+
 h2 {
-    text-align: center;
+    text-align: left;
     font-size: 150%;
     font-weight: bold;
     color:rgb(20, 0, 94)
 }
 
+#experience, 
+#exp {
+    display: flex;
+    flex-direction: column;
+}
+
+#exp li {
+    padding: 10px;
+}
+
+/*
 #exp {
     border-color:blue;  
     border-width: 1px;  
@@ -41,7 +89,7 @@ h2 {
     margin-right: 1rem;
     list-style: none;
 }
-
+*/
 #skills li {
     border-color:rgb(0, 0, 0);  
     border-width: 1px;  
@@ -70,6 +118,16 @@ textarea {
     border-style: ridge;
 }
 
+#leave_message {
+    display: flex;
+    flex-direction: column;
+}
+
+.sub {
+    margin-top: auto;
+    align-self: flex-start;
+}
+
 #leave_message button {
     border: flex;
     border-radius: 4px;
@@ -77,7 +135,7 @@ textarea {
 }
 
 #leave_message button:hover {
-    transform: scale(1.5);
+    transform: scale(1.11);
     cursor: pointer;
 }
 
@@ -106,7 +164,36 @@ textarea {
 footer {
     word-spacing: 1px;
     background-color: lightgrey;
+    text-align: center;
 }
 
-/* still need media queries */
-   
+/* navigation box */
+@media (min-width: 769px) {
+    #header, 
+    .nav {
+        display: flex;
+    }
+}   
+
+@media (min-width: 1025px) {
+	.main-header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/* multiple device condition display */
+@media (min-width: 769px) {
+	.main-header,
+	.content {
+		width: 90%;
+		margin: 0 auto;
+	}
+}
+@media (min-width: 1025px) {
+	.main-header,
+	.content {
+		width: 80%;
+		max-width: 1150px;
+	}
+}

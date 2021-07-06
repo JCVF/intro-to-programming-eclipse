@@ -8,21 +8,29 @@
         
     <body>
 
-        <div>
-            <header id="header">
-            First Project
+        <div class="title">
+            <header id="header" class="main-header">
+            <h1 class="pro">First Project</h1>
+            <ul class="nav">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#msg">Leave a Message</a></li>
+
+            </ul>
             </header>
-            <img src="img/self.jpeg"
-             class="pic">
         </div>
 
+        <img src="img/self.jpeg"
+        class="pic">
+    <div class="content">
         <h1>Julio Vazquez</h1>
-            <section>
+            <section id="about">
                 <h2>About</h2>
                     <p>Student of Code the Dream and Automation Technician by trade. Originally from Mexico but raised in North Carolina.</p>
             </section>
 
-             <section>
+             <section id="experience">
                 <h2>Experience</h2>
                     <ul id="exp">
                         <li>Automation Technician/Electrician; AWNC Durham, NC - 7/2016 to Present</li>
@@ -45,7 +53,7 @@
                 <ul></ul>
             </section>
           
-            <section>
+            <section id="msg">
                 <h3>Leave a Message</h3>
                 <form id="leave_message">
                     <label>Name</label><br>
@@ -57,7 +65,7 @@
                     <label>Message</label><br>
                     <textarea name="message" required="true"></textarea><br>
                     
-                    <button type="submit">Submit</button>
+                    <button call="sub" type="submit">Submit</button>
                 </form>
              </section>
              
@@ -68,7 +76,7 @@
 
                  </ul>
              </section>
-          
+    </div>      
             <footer>
             </footer>
         <script src="js/index.js"></script>
