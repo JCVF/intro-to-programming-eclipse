@@ -54,7 +54,8 @@ messageForm.addEventListener('submit', (e) => {
 
 });
 
-let githubRequest = new XMLHttpRequest();
+/*
+const githubRequest = new XMLHttpRequest();
 githubRequest.open("GET", "https://api.github.com/users/JCVF/repos");
 githubRequest.send();
 githubRequest.addEventListener("load", function(event) {
@@ -67,4 +68,19 @@ githubRequest.addEventListener("load", function(event) {
         project.innerHTML = repositories[i].name;
         projectList.appendChild(project);
     }
+});
+*/
+
+
+fetch("https://api.github.com/users/JCVF/repos")
+.then(response => response.json())
+.then(data => {
+    const repositories = data;
+    const projectSection = document.getElementById('projects');
+    const projectList = projectSection.querySelector('ul');
+        for (let i = 0; i < repositories.length; i++) {
+            let project = document.createElement('li');
+            project.innerText = repositories[i].name;
+            projectList.appendChild(project);    
+        }
 });
