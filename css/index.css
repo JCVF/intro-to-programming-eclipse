@@ -51,7 +51,7 @@ section {
 }
 
 .pic {
-    display: block;
+    display: none;
     margin-left: auto;
     margin-right: auto;
     width: 20%;
@@ -90,6 +90,12 @@ h2 {
     list-style: none;
 }
 */
+
+#skills {
+    display: flex;
+    flex-direction: column;
+}
+
 #skills li {
     border-color:rgb(0, 0, 0);  
     border-width: 1px;  
@@ -97,6 +103,7 @@ h2 {
     margin: 1rem;
     list-style: none;
     padding: 1px;
+    max-width: 300px;
 }
 
 label {
@@ -118,10 +125,6 @@ textarea {
     border-style: ridge;
 }
 
-#leave_message {
-    display: flex;
-    flex-direction: column;
-}
 
 .sub {
     margin-top: auto;
@@ -143,10 +146,12 @@ textarea {
     border-color:rgb(255, 0, 0);  
     border-width: 1px;  
     border-style: groove;
-    margin: 1rem;
+    margin: 1rem;                                 
     padding: 1px;
     background-color: white;
     border-radius: 8px;
+    
+    
 }
 
 #messages button {
@@ -170,13 +175,16 @@ footer {
 /* navigation box */
 @media (min-width: 769px) {
     #header, 
-    .nav {
+    .nav, .row {
         display: flex;
+    }
+    .pic {
+        display: block;
     }
 }   
 
 @media (min-width: 1025px) {
-	.main-header {
+	.main-header, #leave_message {
         flex-direction: row;
         justify-content: space-between;
     }
@@ -185,14 +193,14 @@ footer {
 /* multiple device condition display */
 @media (min-width: 769px) {
 	.main-header,
-	.content {
+	.content, #leave_message {
 		width: 90%;
 		margin: 0 auto;
 	}
 }
 @media (min-width: 1025px) {
 	.main-header,
-	.content {
+	.content, #leave_message {
 		width: 80%;
 		max-width: 1150px;
 	}
